@@ -1,0 +1,11 @@
+{
+    "perdoc_config": true,
+    "exclusions_exact": [],
+    "exclusions_page": [],
+    "table_of_contents": [],
+    "inclusions_font": [10,11,12,13,14,15,16,17,22,23,13,36,31,32],
+    "to_filter": true,
+    "laparams": {
+        "boxes_flow": 0.6
+    }
+}

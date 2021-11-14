@@ -1,0 +1,3 @@
+[submodule "src/eurovoc_labelling/log-odds"]
+	path = src/eurovoc_labelling/log-odds
+	url = https://github.com/m-sean/log-odds

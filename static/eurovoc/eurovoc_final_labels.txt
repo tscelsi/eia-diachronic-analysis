@@ -1,0 +1,40 @@
+6621 electrical and nuclear industries
+6616 oil and gas industry
+6611 coal and mining industries
+6406 production
+2451 prices
+6831 building and public works
+6836 wood industry
+4026 accounting
+4816 land transport
+2016 business operations and trade
+6416 research and intellectual property
+7621 world organisations
+4811 organisation of transport
+6626 renewable energy
+2036 distributive trades
+6826 electronics and electrical engineering
+2446 taxation
+1631 economic analysis
+6811 chemistry
+3611 humanities
+5216 deterioration of the environment
+2816 demography and population
+6821 mechanical engineering
+3606 natural and applied sciences
+7226 asia and oceania
+1216 criminal law
+6411 technology and technical regulations
+1611 economic conditions
+7216 america
+5211 natural environment
+0821 defence
+6816 iron, steel and other metal industries
+6036 food technology
+7206 europe
+1616 regions and regional policy
+5621 cultivation of agricultural land
+0436 executive power and public service
+5631 agricultural activity
+5206 environmental policy
+2031 marketing

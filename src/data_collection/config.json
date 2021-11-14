@@ -1,0 +1,4 @@
+{
+    "eia_aeo_save_path": "../../static/corpora/data/aeo/",
+    "eia_ieo_save_path": "../../static/corpora/data/ieo/"
+}

@@ -1,0 +1,120 @@
+tfidf topic 0 labels: ([('6621 electrical and nuclear industries', 9.47), ('2016 business operations and trade', 4.88), ('6626 renewable energy', 3.67), ('4811 organisation of transport', 2.0)]0)
+emb topic 0 labels: ([('6626 renewable energy', 0.88), ('6821 mechanical engineering', 0.86), ('6826 electronics and electrical engineering', 0.84), ('6411 technology and technical regulations', 0.83)]0)
+[(0.2814950666697298, 'power'), (0.2414588962377678, 'system'), (0.11754153696260229, 'heat'), (0.07225017488814223, 'generation'), (0.06429135899845657, 'electricity'), (0.057083478661588666, 'chp'), (0.05036248076080362, 'energy'), (0.04161238301685071, 'electric'), (0.03957228287328841, 'district_heating'), (0.03433234093076981, 'electrical')]
+==========
+tfidf topic 1 labels: ([('6616 oil and gas industry', 8.94), ('4811 organisation of transport', 8.01), ('6406 production', 4.56), ('6621 electrical and nuclear industries', 2.85)]1)
+emb topic 1 labels: ([('6616 oil and gas industry', 0.91), ('6626 renewable energy', 0.83), ('6621 electrical and nuclear industries', 0.8), ('6406 production', 0.77)]1)
+[(0.3121060241322912, 'fuel'), (0.12164852307639636, 'biofuel'), (0.11091251351861026, 'ethanol'), (0.09049465529456782, 'production'), (0.06694511082862518, 'transport'), (0.0651519283196546, 'biodiesel'), (0.06119950199823692, 'oil'), (0.05941016654816914, 'transportation'), (0.058594706249226566, 'gasoline'), (0.053536870034222174, 'use')]
+==========
+tfidf topic 2 labels: ([('2451 prices', 56.32), ('2016 business operations and trade', 40.59), ('5206 environmental policy', 2.97), ('2031 marketing', 2.67)]2)
+emb topic 2 labels: ([('2451 prices', 0.94), ('2016 business operations and trade', 0.91), ('2036 distributive trades', 0.89), ('6406 production', 0.89)]2)
+[(0.32075350703622585, 'market'), (0.23533495294416695, 'price'), (0.1442558401390668, 'electricity'), (0.05035335299567754, 'paper'), (0.04654512188923257, 'competition'), (0.04290463671478347, 'company'), (0.04163197000920023, 'investment'), (0.04152596658580716, 'risk'), (0.038997297095047706, 'reform'), (0.037697354590791946, 'industry')]
+==========
+tfidf topic 3 labels: ([('4026 accounting', 7.8), ('5206 environmental policy', 3.56), ('2016 business operations and trade', 1.75), ('1611 economic conditions', 1.59)]3)
+emb topic 3 labels: ([('6406 production', 0.89), ('4026 accounting', 0.88), ('2451 prices', 0.87), ('2016 business operations and trade', 0.86)]3)
+[(0.26788428504733525, 'cost'), (0.2173265421198272, 'electricity'), (0.12289666271003834, 'demand'), (0.07647326463298917, 'utility'), (0.060755808499878515, 'program'), (0.056724321635786674, 'load'), (0.051481709620060385, 'saving'), (0.05050306844514126, 'rate'), (0.049238558485090726, 'benefit'), (0.04671577880385226, 'peak')]
+==========
+tfidf topic 4 labels: ([('5206 environmental policy', 15.19), ('4026 accounting', 2.61), ('5216 deterioration of the environment', 1.4), ('1611 economic conditions', 1.15)]4)
+emb topic 4 labels: ([('5216 deterioration of the environment', 0.79), ('5206 environmental policy', 0.78), ('6626 renewable energy', 0.77), ('6406 production', 0.74)]4)
+[(0.3339845981177336, 'emission'), (0.11953500157574334, 'carbon'), (0.10197292373381363, 'reduction'), (0.08585954681115927, 'cost'), (0.08230985769854464, 'ghg'), (0.07805651425856423, 'greenhouse_gas'), (0.0576938411531453, 'reduce'), (0.050569730670759844, 'policy'), (0.046504656357419474, 'result'), (0.04351332962311678, 'country')]
+==========
+tfidf topic 5 labels: ([('2451 prices', 28.61), ('2016 business operations and trade', 4.83), ('2446 taxation', 2.27), ('1631 economic analysis', 1.13)]5)
+emb topic 5 labels: ([('2451 prices', 0.92), ('2016 business operations and trade', 0.92), ('6406 production', 0.92), ('4026 accounting', 0.9)]5)
+[(0.16049959034267894, 'effect'), (0.12409402939450483, 'price'), (0.10351353093748697, 'consumption'), (0.10237963323318801, 'result'), (0.10040092612429498, 'relationship'), (0.09115849114937033, 'electricity'), (0.08961652904590667, 'run'), (0.07736086813177488, 'study'), (0.07702908824857327, 'income'), (0.07394731339222103, 'long')]
+==========
+tfidf topic 6 labels: ([('2016 business operations and trade', 5.23), ('6621 electrical and nuclear industries', 3.54), ('5206 environmental policy', 2.41), ('4811 organisation of transport', 1.77)]6)
+emb topic 6 labels: ([('4811 organisation of transport', 0.89), ('6821 mechanical engineering', 0.87), ('6411 technology and technical regulations', 0.85), ('5206 environmental policy', 0.83)]6)
+[(0.16483417370074865, 'system'), (0.15398472595320703, 'battery'), (0.11300389006063566, 'control'), (0.10831620440970953, 'power'), (0.09497702827858077, 'management'), (0.09021292414044382, 'grid'), (0.08555378868327287, 'load'), (0.07543137454104712, 'network'), (0.06172002266363932, 'propose'), (0.051965867568715386, 'operation')]
+==========
+tfidf topic 7 labels: ([('1631 economic analysis', 1.91), ('2016 business operations and trade', 1.37), ('6416 research and intellectual property', 1.3), ('0821 defence', 1.18)]7)
+emb topic 7 labels: ([('6411 technology and technical regulations', 0.83), ('1631 economic analysis', 0.83), ('6416 research and intellectual property', 0.8), ('6406 production', 0.76)]7)
+[(0.36324303334084146, 'model'), (0.15072052701923355, 'datum'), (0.0902939675191557, 'method'), (0.07853173242054211, 'base'), (0.06120839157966306, 'prediction'), (0.06073426410350673, 'result'), (0.054479324733061794, 'propose'), (0.04751362068846651, 'network'), (0.04735263231899811, 'predict'), (0.04592250627653095, 'estimate')]
+==========
+tfidf topic 8 labels: ([('6626 renewable energy', 10.53), ('2016 business operations and trade', 2.61), ('4811 organisation of transport', 1.26), ('3606 natural and applied sciences', 0.94)]8)
+emb topic 8 labels: ([('6626 renewable energy', 0.81), ('6826 electronics and electrical engineering', 0.75), ('6821 mechanical engineering', 0.69), ('6411 technology and technical regulations', 0.68)]8)
+[(0.30057834799930433, 'solar'), (0.21384842911714375, 'pv'), (0.12920157228968954, 'system'), (0.1069832991290611, 'photovoltaic'), (0.0543609678872067, 'module'), (0.04387036777793334, 'solar_energy'), (0.041926441430450385, 'collector'), (0.03819874605178869, 'thermal'), (0.035713714709400504, 'high'), (0.035318113608021624, 'cell')]
+==========
+tfidf topic 9 labels: ([('6621 electrical and nuclear industries', 6.16), ('6411 technology and technical regulations', 3.55), ('6811 chemistry', 2.58), ('4811 organisation of transport', 0.99)]9)
+emb topic 9 labels: ([('6411 technology and technical regulations', 0.87), ('6621 electrical and nuclear industries', 0.86), ('5216 deterioration of the environment', 0.84), ('6626 renewable energy', 0.83)]9)
+[(0.15282978067284345, 'temperature'), (0.14312827413055243, 'high'), (0.11683290306582395, 'reaction'), (0.11002453117487455, 'process'), (0.09819534443934551, 'reactor'), (0.08001473549159294, 'concentration'), (0.07688594218189848, 'catalyst'), (0.07561346030573675, 'chemical'), (0.07365064684135761, 'increase'), (0.07282438169597445, 'content')]
+==========
+tfidf topic 10 labels: ([('6821 mechanical engineering', 2.51), ('6616 oil and gas industry', 2.23), ('5216 deterioration of the environment', 1.35), ('6411 technology and technical regulations', 1.27)]10)
+emb topic 10 labels: ([('6821 mechanical engineering', 0.84), ('6621 electrical and nuclear industries', 0.83), ('6626 renewable energy', 0.82), ('6826 electronics and electrical engineering', 0.81)]10)
+[(0.287707920746706, 'combustion'), (0.09921478076940683, 'flame'), (0.09397366886926231, 'fuel'), (0.0905172820120331, 'engine'), (0.08871459760883234, 'ratio'), (0.07623782061634549, 'high'), (0.07119622013066638, 'air'), (0.06915077895109674, 'ignition'), (0.06173377794092912, 'gas'), (0.061553152354721634, 'pressure')]
+==========
+tfidf topic 11 labels: ([('6626 renewable energy', 3.27), ('5211 natural environment', 1.17), ('6621 electrical and nuclear industries', 1.15), ('4811 organisation of transport', 0.88)]11)
+emb topic 11 labels: ([('6626 renewable energy', 0.85), ('6821 mechanical engineering', 0.84), ('6831 building and public works', 0.8), ('5216 deterioration of the environment', 0.77)]11)
+[(0.39161254748004215, 'wind'), (0.13136419803536484, 'wind_power'), (0.11528782953092181, 'turbine'), (0.07346880691288056, 'wind_energy'), (0.062379458214466096, 'speed'), (0.05491577637044845, 'farm'), (0.04797244829912162, 'site'), (0.04595630628947509, 'capacity'), (0.03964103551958609, 'power'), (0.03740159334769342, 'offshore')]
+==========
+tfidf topic 12 labels: ([('5206 environmental policy', 7.31), ('2016 business operations and trade', 5.54), ('0436 executive power and public service', 4.82), ('6416 research and intellectual property', 1.8)]12)
+emb topic 12 labels: ([('6416 research and intellectual property', 0.93), ('5206 environmental policy', 0.92), ('2016 business operations and trade', 0.88), ('0436 executive power and public service', 0.86)]12)
+[(0.23456623293133202, 'project'), (0.0995165908708833, 'result'), (0.09266048892308953, 'factor'), (0.08749546986470401, 'study'), (0.08606464030197282, 'local'), (0.08477233155257764, 'survey'), (0.08193240710713899, 'community'), (0.08012873293053814, 'social'), (0.07909715981174693, 'public'), (0.07376594570601648, 'environmental')]
+==========
+tfidf topic 13 labels: ([('6406 production', 8.61), ('5216 deterioration of the environment', 5.84), ('5206 environmental policy', 3.7), ('6836 wood industry', 3.1)]13)
+emb topic 13 labels: ([('6626 renewable energy', 0.88), ('6616 oil and gas industry', 0.86), ('5216 deterioration of the environment', 0.8), ('6036 food technology', 0.79)]13)
+[(0.29160376345474104, 'biomass'), (0.16458266419648407, 'production'), (0.0751008652712026, 'waste'), (0.07496457962169584, 'potential'), (0.0743748346117614, 'bioenergy'), (0.0726991535763113, 'biogas'), (0.07012879449351082, 'wood'), (0.05932417821911127, 'yield'), (0.05917220135278042, 'high'), (0.0580489652024011, 'increase')]
+==========
+tfidf topic 14 labels: ([('4811 organisation of transport', 14.04), ('4816 land transport', 5.25), ('2446 taxation', 2.33), ('6616 oil and gas industry', 1.64)]14)
+emb topic 14 labels: ([('4811 organisation of transport', 0.9), ('4816 land transport', 0.87), ('6821 mechanical engineering', 0.85), ('6826 electronics and electrical engineering', 0.78)]14)
+[(0.28463746864835243, 'vehicle'), (0.1131353419301241, 'charge'), (0.09431332084698213, 'fuel'), (0.08854938218637383, 'car'), (0.08784287228904039, 'electric_vehicle'), (0.0838434503044064, 'hybrid'), (0.06825340696777439, 'battery'), (0.06261797404738897, 'transportation'), (0.05852492894671075, 'electric'), (0.05828185383284647, 'transport')]
+==========
+tfidf topic 15 labels: ([('2016 business operations and trade', 2.55), ('0821 defence', 1.25), ('1631 economic analysis', 1.09), ('6416 research and intellectual property', 0.99)]15)
+emb topic 15 labels: ([('6411 technology and technical regulations', 0.86), ('6416 research and intellectual property', 0.83), ('1631 economic analysis', 0.81), ('5206 environmental policy', 0.79)]15)
+[(0.1722903145727065, 'model'), (0.11516452552206934, 'method'), (0.10881669379167, 'propose'), (0.10546118304915461, 'optimization'), (0.10292547750958268, 'optimal'), (0.09158982835709464, 'system'), (0.08573888477710007, 'problem'), (0.07449977617765569, 'objective'), (0.07385983322589318, 'approach'), (0.0696534830170732, 'base')]
+==========
+tfidf topic 16 labels: ([('5211 natural environment', 10.87), ('5206 environmental policy', 8.15), ('6621 electrical and nuclear industries', 4.19), ('5216 deterioration of the environment', 3.36)]16)
+emb topic 16 labels: ([('6626 renewable energy', 0.89), ('5216 deterioration of the environment', 0.88), ('6616 oil and gas industry', 0.87), ('6831 building and public works', 0.85)]16)
+[(0.35431230016434556, 'water'), (0.14595881795610033, 'hydrogen'), (0.14166583827394202, 'storage'), (0.06866725189088249, 'system'), (0.05880801718681609, 'hydropower'), (0.05866973120654597, 'energy'), (0.04910801092790097, 'pump'), (0.04536381668830956, 'tank'), (0.04170646742864989, 'hydro'), (0.03573974827650705, 'fuel_cell')]
+==========
+tfidf topic 17 labels: ([('2016 business operations and trade', 2.34), ('4811 organisation of transport', 1.54), ('6831 building and public works', 1.47), ('0821 defence', 1.16)]17)
+emb topic 17 labels: ([('6626 renewable energy', 0.85), ('6411 technology and technical regulations', 0.85), ('6821 mechanical engineering', 0.83), ('5216 deterioration of the environment', 0.83)]17)
+[(0.14884738659925653, 'temperature'), (0.13386152647587252, 'cycle'), (0.11565037282416832, 'system'), (0.11081459897221325, 'performance'), (0.09591933456632469, 'heat'), (0.09449539483846173, 'air'), (0.09104893968125542, 'cool'), (0.08834811239736558, 'efficiency'), (0.06346221506145945, 'exergy'), (0.05755211858362258, 'gas')]
+==========
+tfidf topic 18 labels: ([('2016 business operations and trade', 3.61), ('6831 building and public works', 2.38), ('6821 mechanical engineering', 1.04), ('2446 taxation', 1.01)]18)
+emb topic 18 labels: ([('6626 renewable energy', 0.82), ('5216 deterioration of the environment', 0.82), ('6411 technology and technical regulations', 0.82), ('6036 food technology', 0.79)]18)
+[(0.2529209601264947, 'heat'), (0.1524204002659556, 'transfer'), (0.13981751358201974, 'flow'), (0.08493021436996556, 'temperature'), (0.0713918828475939, 'model'), (0.069631986994811, 'rate'), (0.06541944415498042, 'result'), (0.058899713884963865, 'fluid'), (0.052922500501095995, 'thermal'), (0.051645383272119365, 'performance')]
+==========
+tfidf topic 19 labels: ([('6616 oil and gas industry', 13.46), ('6626 renewable energy', 6.41), ('6406 production', 3.49), ('5216 deterioration of the environment', 2.67)]19)
+emb topic 19 labels: ([('6626 renewable energy', 0.9), ('6616 oil and gas industry', 0.9), ('6406 production', 0.89), ('5206 environmental policy', 0.85)]19)
+[(0.24835487933937742, 'oil'), (0.14423338520589057, 'energy'), (0.10297991880042384, 'country'), (0.09490416195690463, 'intensity'), (0.08975760421895494, 'change'), (0.07156292471275692, 'gas'), (0.06645373892866906, 'production'), (0.06410558482352695, 'increase'), (0.06322502002121469, 'import'), (0.05442278199228119, 'natural_gas')]
+==========
+tfidf topic 20 labels: ([('6411 technology and technical regulations', 8.56), ('0436 executive power and public service', 5.18), ('5206 environmental policy', 3.21), ('1616 regions and regional policy', 3.2)]20)
+emb topic 20 labels: ([('6416 research and intellectual property', 0.93), ('2016 business operations and trade', 0.93), ('5206 environmental policy', 0.89), ('1611 economic conditions', 0.88)]20)
+[(0.1852877038048325, 'policy'), (0.16571147925036783, 'paper'), (0.12705392825033499, 'technology'), (0.12536202826270867, 'development'), (0.06889719053597941, 'industry'), (0.06820737169752607, 'issue'), (0.06795256944688284, 'review'), (0.06452832679616544, 'government'), (0.06394264684209007, 'challenge'), (0.06305675511311214, 'process')]
+==========
+tfidf topic 21 labels: ([('2016 business operations and trade', 10.54), ('5206 environmental policy', 4.49), ('6626 renewable energy', 2.6), ('2451 prices', 1.74)]21)
+emb topic 21 labels: ([('5206 environmental policy', 0.89), ('2016 business operations and trade', 0.89), ('6626 renewable energy', 0.87), ('6406 production', 0.86)]21)
+[(0.15561692496112312, 'renewable'), (0.15214698182744613, 'policy'), (0.1314283463399956, 'renewable_energy'), (0.11700296042670955, 'electricity'), (0.09195311242331598, 'green'), (0.07959217270069084, 'market'), (0.07433132116116024, 'scheme'), (0.06806513213353602, 'target'), (0.06562272188406443, 'support'), (0.06424032614195803, 'subsidy')]
+==========
+tfidf topic 22 labels: ([('5206 environmental policy', 13.92), ('7226 asia and oceania', 3.85), ('6626 renewable energy', 2.15), ('1611 economic conditions', 1.71)]22)
+emb topic 22 labels: ([('5206 environmental policy', 0.84), ('6626 renewable energy', 0.82), ('6406 production', 0.81), ('5216 deterioration of the environment', 0.81)]22)
+[(0.3603980808985545, 'emission'), (0.1834776323207243, 'china'), (0.08378832673387439, 'carbon'), (0.07286552454864458, 'reduction'), (0.05701790477894508, 'sector'), (0.055812191817758816, 'reduce'), (0.049548266775155586, 'intensity'), (0.0471757303318004, 'result'), (0.04521067296942519, 'energy'), (0.04470566882511718, 'increase')]
+==========
+tfidf topic 23 labels: ([('6626 renewable energy', 6.54), ('2016 business operations and trade', 3.63), ('2816 demography and population', 3.02), ('7621 world organisations', 1.8)]23)
+emb topic 23 labels: ([('6406 production', 0.86), ('5206 environmental policy', 0.83), ('6626 renewable energy', 0.83), ('2016 business operations and trade', 0.82)]23)
+[(0.2667286403190322, 'household'), (0.1468725916003521, 'energy'), (0.08104675445592092, 'rural'), (0.0802340106838616, 'consumption'), (0.07859185605089695, 'residential'), (0.07762242679971706, 'energy_consumption'), (0.07211619251424516, 'urban'), (0.06809490653780653, 'use'), (0.06460907376734763, 'energy_efficiency'), (0.06408354727081973, 'fuel')]
+==========
+tfidf topic 24 labels: ([('2016 business operations and trade', 5.71), ('4811 organisation of transport', 2.02), ('6411 technology and technical regulations', 1.54), ('5206 environmental policy', 1.0)]24)
+emb topic 24 labels: ([('6411 technology and technical regulations', 0.91), ('6416 research and intellectual property', 0.89), ('5206 environmental policy', 0.88), ('4811 organisation of transport', 0.88)]24)
+[(0.25623874281411907, 'system'), (0.13094981286776344, 'performance'), (0.12231767086922228, 'control'), (0.10366585348671604, 'design'), (0.07479847218843201, 'fuel_cell'), (0.06945967082530706, 'condition'), (0.0669077352438199, 'operation'), (0.06128627786944758, 'simulation'), (0.05741080880240657, 'current'), (0.056964955032765996, 'result')]
+==========
+tfidf topic 25 labels: ([('6831 building and public works', 9.2), ('6621 electrical and nuclear industries', 1.08), ('5216 deterioration of the environment', 1.05), ('2016 business operations and trade', 0.96)]25)
+emb topic 25 labels: ([('6626 renewable energy', 0.87), ('6831 building and public works', 0.85), ('6821 mechanical engineering', 0.83), ('5216 deterioration of the environment', 0.82)]25)
+[(0.21647753613152568, 'building'), (0.2011033360371364, 'thermal'), (0.10179030813110827, 'heating'), (0.09875550861861722, 'temperature'), (0.08874599428533318, 'heat'), (0.08544950341568362, 'cool'), (0.06236011130852627, 'material'), (0.04963773838694882, 'air'), (0.04833449718509891, 'pcm'), (0.047345466500021346, 'system')]
+==========
+tfidf topic 26 labels: ([('6411 technology and technical regulations', 5.76), ('6626 renewable energy', 4.14), ('6621 electrical and nuclear industries', 3.87), ('2016 business operations and trade', 2.57)]26)
+emb topic 26 labels: ([('6406 production', 0.89), ('6626 renewable energy', 0.88), ('2016 business operations and trade', 0.88), ('6411 technology and technical regulations', 0.87)]26)
+[(0.1613411048886708, 'scenario'), (0.11938794834404087, 'electricity'), (0.11662670169396802, 'generation'), (0.1048269780473761, 'technology'), (0.08999135107205701, 'cost'), (0.08727852052424752, 'power'), (0.08650426976969082, 'energy'), (0.08628710870273772, 'future'), (0.08215330722126027, 'system'), (0.06560270973595109, 'demand')]
+==========
+tfidf topic 27 labels: ([('6411 technology and technical regulations', 6.02), ('6611 coal and mining industries', 5.82), ('5206 environmental policy', 3.04), ('6621 electrical and nuclear industries', 2.8)]27)
+emb topic 27 labels: ([('6621 electrical and nuclear industries', 0.9), ('6616 oil and gas industry', 0.89), ('6626 renewable energy', 0.88), ('6821 mechanical engineering', 0.88)]27)
+[(0.16322371875643094, 'plant'), (0.1440047488763991, 'coal'), (0.12314545761610383, 'gas'), (0.09981862859994918, 'power_plant'), (0.08868488298076008, 'cycle'), (0.08685470948948291, 'natural_gas'), (0.08516163637753706, 'process'), (0.0732732538280516, 'technology'), (0.07103090398292086, 'cost'), (0.06480205949236453, 'fire')]
+==========
+tfidf topic 28 labels: ([('6626 renewable energy', 22.08), ('7621 world organisations', 5.76), ('6621 electrical and nuclear industries', 3.9), ('6831 building and public works', 1.86)]28)
+emb topic 28 labels: ([('6626 renewable energy', 0.96), ('5206 environmental policy', 0.86), ('6406 production', 0.85), ('6411 technology and technical regulations', 0.85)]28)
+[(0.5060304006081716, 'energy'), (0.11169680145064598, 'energy_efficiency'), (0.06901930718404842, 'building'), (0.05628206454319432, 'system'), (0.054917196782609826, 'paper'), (0.04679641364580234, 'analysis'), (0.04401333989113056, 'indicator'), (0.04256382768589895, 'measure'), (0.03850160079437592, 'present'), (0.030179047414122015, 'energy_consumption')]
+==========
+tfidf topic 29 labels: ([('5206 environmental policy', 4.61), ('6616 oil and gas industry', 3.32), ('6821 mechanical engineering', 2.67), ('6621 electrical and nuclear industries', 1.28)]29)
+emb topic 29 labels: ([('6821 mechanical engineering', 0.84), ('6626 renewable energy', 0.8), ('6621 electrical and nuclear industries', 0.8), ('6616 oil and gas industry', 0.8)]29)
+[(0.23902283163422916, 'engine'), (0.14679678426690776, 'fuel'), (0.13691680150884136, 'emission'), (0.11337486455869758, 'injection'), (0.08469142040338093, 'diesel'), (0.06760294084935872, 'co'), (0.05756266377110104, 'combustion'), (0.053753026155889616, 'high'), (0.05087391454306202, 'low'), (0.049404752308531814, 'increase')]
+==========

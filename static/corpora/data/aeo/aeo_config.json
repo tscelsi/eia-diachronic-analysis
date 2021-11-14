@@ -1,0 +1,8 @@
+{
+    "perdoc_config": true,
+    "exclusions_exact": ["U.S. Energy Information Administration\n","#AEO2018\nwww.eia.gov/aeo\n", 	"U.S. Energy Information  Administration\n"],
+    "exclusions_page": [],
+    "inclusions_font": [10,11,17,19,28,14],
+    "table_of_contents": [],
+    "to_filter": true
+}
