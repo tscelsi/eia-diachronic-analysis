@@ -1,0 +1,8 @@
+{
+    "perdoc_config": false,
+    "table_of_contents": [],
+    "exclusions_exact": ["iea.gov.au"],
+    "exclusions_page": [0, 1],
+    "inclusions_font": [],
+    "laparams": {}
+}
