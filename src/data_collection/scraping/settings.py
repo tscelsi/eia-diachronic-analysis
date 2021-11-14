@@ -9,8 +9,8 @@
 
 BOT_NAME = 'scraping'
 
-SPIDER_MODULES = ['corpora.src.data_collection.scraping.spiders']
-NEWSPIDER_MODULE = 'corpora.src.data_collection.scraping.spiders'
+SPIDER_MODULES = ['data_collection.scraping.spiders']
+NEWSPIDER_MODULE = 'data_collection.scraping.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

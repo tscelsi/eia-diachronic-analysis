@@ -12,7 +12,6 @@ import json
 import os
 from multiprocessing import Pool
 import re
-from corpus import Corpus
 from time import time
 import spacy
 from spacy.tokens import DocBin
@@ -72,7 +71,7 @@ class DataFrameCreator:
         df = pd.DataFrame(data=data, columns=self.columns)
         df = df.dropna(subset=['para_text'])
         print("enriching...")
-        # df = self._enrich(df, tfidf=tfidf, lemm_pos=lemm_pos)
+        df = self._enrich(df, tfidf=tfidf, lemm_pos=lemm_pos)
         df = self.annotate_year(DOC_YEAR_MAP_PATH, df) 
         if save:
             if type_ == "csv":
@@ -85,11 +84,7 @@ class DataFrameCreator:
         """Merges all the documents into header paragraph pairs and creates a dataframe
         """
         combined = []
-        # for f in self.files:
-        #     res = self.combine_doc(f)
-        #     if res:
-        #         combined.extend(res)
-        pool = Pool(11)
+        pool = Pool(NUM_CPU)
         a = [pool.apply_async(self.combine_doc, args=(path,))
              for path in self.files]
         for fut in a:
@@ -227,14 +222,11 @@ class DataFrameCreator:
         Args:
             path (str): as above.
         """
-        relpath = os.path.relpath(path, os.environ['ROADMAP_DATA'])
+        relpath = os.path.relpath(path, '../static/corpora/data')
         toks = re.split(r"[\\/]", relpath)
-        org = toks[0]
-        doc_category = toks[2]
-        if not is_dir:
-            file_name = toks[3]
-        else:
-            file_name = None
+        org = "EIA"
+        doc_category = toks[0]
+        file_name = toks[1]
         return (org, doc_category, file_name)
 
 
@@ -288,13 +280,10 @@ def test_combine():
 def main():
     start = time()
     dirs = [
-        # os.path.join(os.environ['ROADMAP_DATA'], "eia", "files", "steo"),
         os.path.join(os.environ['ROADMAP_DATA'], "eia", "files", "ieo"),
         os.path.join(os.environ['ROADMAP_DATA'], "eia", "files", "aeo"),
-        # os.path.join(os.environ['ROADMAP_DATA'],
-        #              "irena", "files", "tech_briefs")
     ]
-    dfc = DataFrameCreator(dirs, save_path=f"greyroads_df.csv")
+    dfc = DataFrameCreator(dirs, save_path=f"../static/corpora/data/converted_df.csv")
     dfc.run(lemm_pos=False, tfidf=False)
     end = time()
     print(f"{end - start}")

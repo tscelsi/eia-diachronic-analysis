@@ -12,32 +12,22 @@ import sys
 import json
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
-import argparse
-
-# DEFAULT_EIA_AEO_SAVE_PATH = os.path.join(
-#     os.environ['ROADMAP_DATA'], "eia", "files", "aeo")
-# DEFAULT_EIA_IEO_SAVE_PATH = os.path.join(
-#     os.environ['ROADMAP_DATA'], "eia", "files", "ieo")
-# DEFAULT_EIA_STEO_SAVE_PATH = os.path.join(
-#     os.environ['ROADMAP_DATA'], "eia", "files", "steo")
-# DEFAULT_ARENA_SAVE_PATH = os.path.join(
-#     os.environ['ROADMAP_DATA'], "arena", "files")
-# DEFAULT_IRENA_TECH_BRIEFS_SAVE_PATH = os.path.join(
-#     os.environ['ROADMAP_DATA'], "irena", "files", "tech_briefs")
-
-CONFIG_PATH = os.path.join(os.path.dirname(__file__), "config.json")
 
 
-def init(save_dir):
+settings_file_path = 'data_collection.scraping.settings' # The path seen from root, ie. from main.py
+os.environ.setdefault('SCRAPY_SETTINGS_MODULE', settings_file_path)
+FILE_SAVE_DIR = "../static/corpora/data/"
+
+def init():
     """Load config and perform appropriate checks
 
     Returns:
         dict: arguments to be used by scrapers
     """
-    if not os.path.isdir(save_dir):
-        os.mkdir(save_dir)
-    AEO_SAVE_PATH = os.path.join(save_dir, "aeo")
-    IEO_SAVE_PATH = os.path.join(save_dir, "ieo")
+    if not os.path.isdir(FILE_SAVE_DIR):
+        os.mkdir(FILE_SAVE_DIR)
+    AEO_SAVE_PATH = os.path.join(FILE_SAVE_DIR, "aeo")
+    IEO_SAVE_PATH = os.path.join(FILE_SAVE_DIR, "ieo")
     if not os.path.exists(AEO_SAVE_PATH):
         os.mkdir(AEO_SAVE_PATH)
     if not os.path.exists(IEO_SAVE_PATH):
@@ -57,8 +47,8 @@ def init(save_dir):
     }
 
 
-def run(save_dir):
-    args = init(save_dir)
+def run():
+    args = init()
     process = CrawlerProcess(get_project_settings())
     process.crawl("eia-annual-energy-outlook",
                   save_path=args["eia-annual-energy-outlook"])

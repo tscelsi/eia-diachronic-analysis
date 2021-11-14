@@ -23,17 +23,17 @@ import json
 import sys
 import re
 from bs4 import BeautifulSoup
-from helper.pdf import CustomRoadMapConverter
+from utils.pdf import CustomRoadMapConverter
 
+NUM_CPU = os.cpu_count() - 1 if os.cpu_count() > 1 else 1
 
 class RoadmapPDFConverter:
     """
     This class is responsible for taking in a config file for a set/single pdf and converting that pdf to text.
 
     """
-    dir_path = os.path.join(os.environ['ROADMAP_SCRAPER'])
-    config_path = os.path.join(
-        os.environ['ROADMAP_SCRAPER'], "default_config.json")
+    dir_path = ""
+    config_path = os.path.join(os.path.dirname(__file__), "default_scraping_config.json")
     laparams = None
 
     def __init__(self, custom_filter=None, perdoc_config=False, **kwargs):
@@ -108,7 +108,7 @@ class RoadmapPDFConverter:
 
     def mp_parse_multiple_to_json(self):
         paths = self._get_pdf_and_config_paths()
-        pool = Pool(processes=3)
+        pool = Pool(processes=NUM_CPU/2 if NUM_CPU != 1 else 1)
         a = [pool.apply_async(self._mp_parse_pdf_to_json, kwds=path)
              for path in paths]
         for future in a:
@@ -448,32 +448,10 @@ def parse_single():
         **{"filename": file_path, "config": conf_path, "outfile": out_path})
 
 
-class EIASTEOConverter(RoadmapPDFConverter):
-    dir_path = os.path.join(
-        os.environ['ROADMAP_DATA'], "eia", "files", "steo")
-    config_path = os.path.join(
-        os.environ['ROADMAP_DATA'], "eia", "files", "steo", "steo_config.json")
-
-    def __init__(self):
-        with open(self.config_path, "r") as fp:
-            config = json.load(fp)
-        super().__init__(custom_filter=self._custom_filter, **config)
-
-    def _custom_filter(self, line):
-        # remove table and figure headers
-        res = re.match(
-            r"^((Appendix|Table|Figure|Chart|F i g u r e|T a b l e) ([A-Za-z]+)?(\d+|(\d )+)\.)", line)
-        if res:
-            return ""
-        else:
-            return line
-
 
 class EIAIEOConverter(RoadmapPDFConverter):
-    dir_path = os.path.join(
-        os.environ['ROADMAP_DATA'], "eia", "files", "ieo")
-    config_path = os.path.join(
-        os.environ['ROADMAP_DATA'], "eia", "files", "ieo", "ieo_config.json")
+    dir_path = "../static/corpora/data/ieo"
+    config_path = "../static/corpora/data/ieo/ieo_config.json"
 
     def __init__(self):
         with open(self.config_path, "r") as fp:
@@ -490,10 +468,8 @@ class EIAIEOConverter(RoadmapPDFConverter):
 
 
 class EIAAEOConverter(RoadmapPDFConverter):
-    dir_path = os.path.join(
-        os.environ['ROADMAP_DATA'], "eia", "files", "aeo")
-    config_path = os.path.join(
-        os.environ['ROADMAP_DATA'], "eia", "files", "aeo", "aeo_config.json")
+    dir_path = "../static/corpora/data/aeo"
+    config_path = "../static/corpora/data/aeo/aeo_config.json"
 
     def __init__(self):
         with open(self.config_path, "r") as fp:
@@ -509,54 +485,13 @@ class EIAAEOConverter(RoadmapPDFConverter):
             return line
 
 
-class REN21GSRConverter(RoadmapPDFConverter):
-    dir_path = os.path.join(os.environ['ROADMAP_DATA'], "ren21", "files", "gsr")
-    config_path = os.path.join(os.environ['ROADMAP_DATA'], "ren21", "files", "gsr", "gsr_config.json")
-    
-    def __init__(self):
-        with open(self.config_path, "r") as fp:
-            config = json.load(fp)
-        super().__init__(**config)
-
-
-# class ARENAConverter(RoadmapPDFConverter):
-#     dir_path = os.path.join(
-#         os.environ['ROADMAP_DATA'], "arena", "files")
-#     config_path = os.path.join(
-#         os.environ['ROADMAP_DATA'], "arena", "files", "arena_config.json")
-
-#     def __init__(self):
-#         with open(self.config_path, "r") as fp:
-#             config = json.load(fp)
-#         super().__init__(**config)
-
-
-class IRENATechBriefsConverter(RoadmapPDFConverter):
-    dir_path = os.path.join(
-        os.environ['ROADMAP_DATA'], "irena", "files", "tech_briefs")
-    config_path = os.path.join(
-        os.environ['ROADMAP_DATA'], "irena", "files", "tech_briefs", "tech_briefs_config.json")
-
-    def __init__(self):
-        with open(self.config_path, "r") as fp:
-            config = json.load(fp)
-        super().__init__(custom_filter=self._custom_filter, **config)
-
-    def _custom_filter(self, line):
-        return re.sub(r"([A-Za-z]+[if])\s+([recv][A-Za-z]+)", r"\1\2", line)
-
-
 def bulk_convert():
-    # eia_steo = EIASTEOConverter()
     eia_aeo = EIAAEOConverter()
     eia_ieo = EIAIEOConverter()
-    # irena = IRENATechBriefsConverter()
 
     processes = [
-        # Process(target=eia_steo.mp_parse_multiple_to_json),
         Process(target=eia_aeo.mp_parse_multiple_to_json),
         Process(target=eia_ieo.mp_parse_multiple_to_json),
-        # Process(target=irena.mp_parse_multiple_to_json)
     ]
     for p in processes:
         p.start()
@@ -565,8 +500,4 @@ def bulk_convert():
 
 
 if __name__ == "__main__":
-    from helper.helper import timer
-    with timer() as t:
-        # parse_single()
-        bulk_convert()
-    print(t())
+    bulk_convert()

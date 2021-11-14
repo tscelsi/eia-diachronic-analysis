@@ -1,3 +1,6 @@
 [submodule "src/eurovoc_labelling/log-odds"]
 	path = src/eurovoc_labelling/log-odds
 	url = https://github.com/m-sean/log-odds
+[submodule "dtm-toolkit"]
+	path = dtm-toolkit
+	url = https://github.com/tscelsi/dtm-toolkit.git
