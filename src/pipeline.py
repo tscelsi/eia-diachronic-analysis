@@ -36,5 +36,5 @@ def pipeline(run_scrape=True, run_conversion=True, run_dataframe_creation=True, 
         enriched_df.to_pickle("../static/corpora/eia_dataset.pickle", protocol=4)
 
 if __name__ == "__main__":
-    pipeline(run_scrape=False, run_conversion=False)
+    pipeline()
 
