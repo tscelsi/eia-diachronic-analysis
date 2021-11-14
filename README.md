@@ -6,6 +6,10 @@ This repository accompanies the above paper and provides:
 2. Analysis of DTM results on the two EIA corpora discussed in the results
 3. Reference to the repository that contains the automatic labelling technique, split apart from this repo for easier maintaiability and generalisation.
 
+If any explanation is lacking feel free to contact me at:
+
+tscelsi@student.unimelb.edu.au
+
 ## To create EIA dataset (~20min)
 
 ### 0. Clone repository
